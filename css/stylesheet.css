@@ -49,14 +49,12 @@ img.propic {
 .textlink:hover {
 	text-decoration: underline;
 }
-.textlink:visited {
-	text-decoration: none;
-}
 .link {
 	display: inline-block;
 	font-size: 18px;
 	margin-left: 6px;
 	margin-right: 6px;
+	margin-bottom: 20px;
 }
 .link a {
 	text-decoration: none;
@@ -65,15 +63,11 @@ img.propic {
 .link a:hover {
 	text-decoration: underline;
 }
-.link a:visited {
-	text-decoration: none;
-}
 .socials {
 	position: fixed;
 	bottom: 0%;
 	left: 50%;
 	margin-bottom: 50px;
-	margin-top: 50px;
 	margin-left: -58px;
 }
 img.social {
