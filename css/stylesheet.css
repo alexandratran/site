@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* Body */
 body {
-	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
 	padding-top: 70px;
 	padding-bottom: 50px;
 	text-align: center;
@@ -14,19 +14,20 @@ img.propic {
 	margin-right: auto;
 }
 .name {
-	color: #1a1a1a;
-	margin-top: 30px;
+	color: #111111;
+	margin-top: 28px;
 	margin-bottom: 30px;
-	font-size: 35px;
-	font-weight: normal;
+	font-size: 42px;
+	font-weight: 300;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 }
 .hometext {
 	width: 50%;
 	font-size: 18px;
 	margin-left: auto;
 	margin-right: auto;
-	color: #1a1a1a;
-	line-height: 40px;
+	color: #111111;
+	line-height: 35px;
 }
 .text {
 	width: 45%;
@@ -34,8 +35,8 @@ img.propic {
 	text-align: left;
 	margin-left: auto;
 	margin-right: auto;
-	color: #1a1a1a;
-	line-height: 28px;
+	color: #111111;
+	line-height: 30px;
 }
 .nav {
 	margin-left: auto;
@@ -43,11 +44,11 @@ img.propic {
 }
 .textlink {
 	font-size: 18px;
-	text-decoration: none;
-	color:#2673D3
+	text-decoration: underline;
+	color:#111111;
 }
 .textlink:hover {
-	text-decoration: underline;
+	text-decoration: none;
 }
 .link {
 	display: inline-block;
@@ -57,29 +58,27 @@ img.propic {
 	margin-bottom: 20px;
 }
 .link a {
-	text-decoration: none;
-	color:#2673D3
+	text-decoration: underline;
+	color:#111111;
 }
 .link a:hover {
-	text-decoration: underline;
+	text-decoration: none;
 }
 .socials {
 	position: fixed;
-	bottom: 0%;
 	left: 50%;
-	margin-bottom: 50px;
-	margin-left: -58px;
+	margin-left: -55px;
 }
 img.social {
 	display: inline-block;
-	height: 25px;
-	width: 25px;
+	height: 23px;
+	width: 23px;
 	margin-left: 7px;
 	margin-right: 7px;
-	opacity: 0.5;
+	opacity: 0.4;
 }
 img.social:hover {
-	opacity: 0.7;
+	opacity: 0.65;
 }
 
 /* Mobile */
