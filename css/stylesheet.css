@@ -3,7 +3,7 @@
 body {
 	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
 	padding-top: 70px;
-	padding-bottom: 50px;
+	padding-bottom: 30px;
 	text-align: center;
 }
 img.propic {
@@ -18,8 +18,10 @@ img.propic {
 	margin-top: 28px;
 	margin-bottom: 30px;
 	font-size: 42px;
-	font-weight: 300;
+	font-weight: 200;
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
 }
 .hometext {
 	width: 50%;
@@ -65,9 +67,8 @@ img.propic {
 	text-decoration: none;
 }
 .socials {
-	position: fixed;
-	left: 50%;
-	margin-left: -58px;
+	
+	text-align: center;
 }
 img.social {
 	display: inline-block;
@@ -85,7 +86,7 @@ img.social:hover {
 @media (max-width: 320px) {
 
 .text {
-	width: 100%;
+	width: 93%;
 	text-align: justify;
 	padding-top: 0px;
 	padding-right: 0px;
@@ -99,7 +100,7 @@ img.social:hover {
 
 
 .text {
-	width: 100%;
+	width: 70%;
 	padding-top: 0px;
 	padding-right: 0px;
 	padding-bottom: 0px;
@@ -107,10 +108,5 @@ img.social:hover {
 }
 }
 
-/* Small Desktops */
-@media (min-width: 768px) and (max-width: 1096px) {
-.text {
-	width: 100%;
-}
 
 }
