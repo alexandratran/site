@@ -68,7 +68,8 @@ img.propic {
 }
 .socials {
 	
-	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 img.social {
 	display: inline-block;
