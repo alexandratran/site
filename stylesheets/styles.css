@@ -1,0 +1,118 @@
+body {
+  background-color: #fff;
+  padding:0px;
+  font: 16px/1.5 'Nunito', Helvetica, Arial, sans-serif;
+  color:#000;
+  font-weight:450;
+  animation: fadeInAnimation ease 1.5s; 
+  animation-iteration-count: 1; 
+  animation-fill-mode: forwards; 
+}
+@keyframes fadeInAnimation { 
+  0% { opacity: 0; } 
+  100% { opacity: 1; } 
+} 
+
+.wrapper {
+  width:960px;
+  margin:0 auto;
+}
+
+header {
+  width:350px;
+  height: 100%;
+  float:left;
+  position:fixed;
+  background-image: url(../images/dottedline.png);
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size: 2px;
+  overflow-y: auto;
+}
+header a {
+  padding: 30px 6px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: block;
+}
+#clickable {
+  transition: padding-right 0.1s ease;
+}
+#clickable:hover {
+  padding-right: 10%;
+}
+.textlinks {
+  display: none;
+}
+
+section {
+  width:600px;
+  margin-left: 360px;
+  padding:50px 0px 50px;
+}
+section a {
+  color:#39c;
+  text-decoration:none;
+}
+section a:hover {
+  color:#069;
+}
+img {
+  max-width: 100%;
+}
+h1, h2, h3 {
+  color:#222;
+  margin:0 0 20px;
+  line-height:1.1;
+}
+p, ul, ol, table, pre, dl {
+  margin:0 0 20px;
+}
+h1 {
+  font-size:28px;
+}
+h2 {
+  color:#393939;
+}
+blockquote {
+  border-left:1px solid #e5e5e5;
+  margin:0;
+  padding:0 0 0 20px;
+  font-style:italic;
+}
+
+@media screen and (max-width: 960px) {
+  .wrapper {
+    width: 90%;
+    text-align: justify;
+  }
+  header {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-image: none;
+    padding-bottom: 20px;
+  }
+  header a {
+    float: left;
+    padding: 2px 12px;
+    font-family: Courier, monospace;
+    color: black;
+    text-decoration: none;
+  }
+  header a:hover {
+    color: yellow;
+  }
+  .icons {
+    display: none;
+  }
+  .textlinks {
+    display: block;
+  }
+  section {
+    margin-left: 0px;
+    width: 100%;
+  }
+}
+
