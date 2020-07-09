@@ -1,9 +1,9 @@
 body {
   background-color: #fff;
-  padding:0px;
+  padding: 0px;
   font: 16px/1.5 'Nunito', Helvetica, Arial, sans-serif;
-  color:#000;
-  font-weight:450;
+  color: #333333;
+  font-weight: 300;
   animation: fadeInAnimation ease 1.5s; 
   animation-iteration-count: 1; 
   animation-fill-mode: forwards; 
@@ -14,25 +14,22 @@ body {
 } 
 
 .wrapper {
-  width:960px;
-  margin:0 auto;
+  width: 960px;
+  margin: 0 auto;
 }
 
 header {
-  width:350px;
+  width: 350px;
   height: 100%;
-  float:left;
-  position:fixed;
-  background-image: url(../images/dottedline.png);
-  background-position: center;
-  background-repeat: repeat-y;
+  float: left;
+  position: fixed;
+  background: url(../images/line.png) repeat-y center;
   background-size: 2px;
   overflow-y: auto;
 }
 header a {
   padding: 30px 6px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   text-align: center;
   display: block;
 }
@@ -47,39 +44,52 @@ header a {
 }
 
 section {
-  width:600px;
+  width: 600px;
   margin-left: 360px;
-  padding:50px 0px 50px;
+  padding: 50px 0px 50px;
 }
 section a {
-  color:#39c;
-  text-decoration:none;
+  text-decoration: underline;
 }
 section a:hover {
-  color:#069;
+  color: gray;
+}
+#logo {
+  margin: 0 0 40px 0;
+  width: 518px;
 }
 img {
   max-width: 100%;
 }
 h1, h2, h3 {
-  color:#222;
-  margin:0 0 20px;
-  line-height:1.1;
+  color: #222;
+  margin: 0 0 20px;
+  line-height: 1.1;
 }
 p, ul, ol, table, pre, dl {
-  margin:0 0 20px;
+  margin: 0 0 20px;
 }
 h1 {
-  font-size:28px;
+  font-size: 28px;
 }
 h2 {
-  color:#393939;
+  color: #393939;
 }
 blockquote {
-  border-left:1px solid #e5e5e5;
-  margin:0;
-  padding:0 0 0 20px;
-  font-style:italic;
+  border-left: 1px solid #e5e5e5;
+  margin: 0;
+  padding: 0 0 0 20px;
+  font-style: italic;
+}
+small {
+  font-size: 13px;
+}
+b {
+  font-weight: 500px;
+}
+#license {
+  padding-top: 50px;
+  font-size: 11px;
 }
 
 @media screen and (max-width: 960px) {
@@ -98,7 +108,7 @@ blockquote {
     float: left;
     padding: 2px 12px;
     font-family: Courier, monospace;
-    color: black;
+    color: #000;
     text-decoration: none;
   }
   header a:hover {
@@ -113,6 +123,9 @@ blockquote {
   section {
     margin-left: 0px;
     width: 100%;
+  }
+  #logo {
+    margin-top: 0;
   }
 }
 
