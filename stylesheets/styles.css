@@ -1,9 +1,7 @@
 body {
   background-color: #fff;
-  padding: 0px;
-  font: 16px/1.5 'Nunito', Helvetica, Arial, sans-serif;
-  color: #333333;
-  font-weight: 300;
+  font: 300 16px/1.5 'Nunito', Helvetica, Arial, sans-serif;
+  color: #333;
   animation: fadeInAnimation ease 1.5s; 
   animation-iteration-count: 1; 
   animation-fill-mode: forwards; 
@@ -33,14 +31,18 @@ header a {
   text-align: center;
   display: block;
 }
-#clickable {
-  transition: padding-right 0.1s ease;
+#profile {
+  width: 185px;
+  padding-top: 45px;
 }
-#clickable:hover {
-  padding-right: 10%;
+#clickable { 
+  transition: padding-right 0.1s ease; 
 }
-.textlinks {
-  display: none;
+#clickable:hover { 
+  padding-right: 10%; 
+}
+.textlinks { 
+  display: none; 
 }
 
 section {
@@ -55,37 +57,20 @@ section a:hover {
   color: gray;
 }
 #logo {
-  margin: 0 0 40px 0;
+  margin-bottom: 40px;
   width: 518px;
 }
 img {
   max-width: 100%;
 }
-h1, h2, h3 {
-  color: #222;
-  margin: 0 0 20px;
-  line-height: 1.1;
-}
-p, ul, ol, table, pre, dl {
-  margin: 0 0 20px;
-}
-h1 {
-  font-size: 28px;
-}
-h2 {
-  color: #393939;
+p, ul, ol {
+  margin-bottom: 20px;
 }
 blockquote {
   border-left: 1px solid #e5e5e5;
   margin: 0;
-  padding: 0 0 0 20px;
+  padding-left: 20px;
   font-style: italic;
-}
-small {
-  font-size: 13px;
-}
-b {
-  font-weight: 500px;
 }
 #license {
   padding-top: 50px;
@@ -93,10 +78,12 @@ b {
 }
 
 @media screen and (max-width: 960px) {
+
   .wrapper {
     width: 90%;
     text-align: justify;
   }
+
   header {
     width: 100%;
     height: auto;
@@ -120,6 +107,7 @@ b {
   .textlinks {
     display: block;
   }
+
   section {
     margin-left: 0px;
     width: 100%;
@@ -127,5 +115,6 @@ b {
   #logo {
     width: 100%;
   }
+  
 }
 
