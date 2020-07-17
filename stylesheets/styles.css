@@ -4,7 +4,7 @@ body {
   color: #333;
   animation: fadeInAnimation ease 1.5s; 
   animation-iteration-count: 1; 
-  animation-fill-mode: forwards; 
+  animation-fill-mode: forwards;
 }
 @keyframes fadeInAnimation { 
   0% { opacity: 0; } 
@@ -13,7 +13,7 @@ body {
 
 .wrapper {
   width: 960px;
-  margin: 0 auto;
+  margin: -7px auto;
 }
 
 header {
@@ -21,25 +21,22 @@ header {
   height: 100%;
   float: left;
   position: fixed;
-  background: url(../images/line.png) repeat-y center;
+  background: url(../assets/line.png) repeat-y center;
   background-size: 2px;
   overflow-y: auto;
 }
-header a {
+header span {
   padding: 30px 6px;
   margin: 0 auto;
   text-align: center;
   display: block;
 }
-#profile {
-  width: 185px;
-  padding-top: 45px;
-}
-#clickable { 
+.icons a {
+  padding: 15px;
   transition: padding-right 0.1s ease; 
 }
-#clickable:hover { 
-  padding-right: 10%; 
+.icons a:hover { 
+  padding-right: 8%; 
 }
 .textlinks { 
   display: none; 
@@ -51,10 +48,14 @@ section {
   padding: 50px 0px 50px;
 }
 section a {
+  color: #333;
   text-decoration: underline;
 }
 section a:hover {
-  color: gray;
+  text-decoration: none;
+}
+section a:visited {
+  color: #333;
 }
 #logo {
   margin-bottom: 40px;
@@ -71,6 +72,10 @@ blockquote {
   margin: 0;
   padding-left: 20px;
   font-style: italic;
+}
+hr {
+  width: 30px;
+  margin: 30px auto;
 }
 #license {
   padding-top: 50px;
@@ -89,10 +94,11 @@ blockquote {
     height: auto;
     position: relative;
     background-image: none;
-    padding-bottom: 20px;
+    padding: 20px 0;
+    text-align: center;
   }
   header a {
-    float: left;
+    float: center;
     padding: 2px 12px;
     font-family: Courier, monospace;
     color: #000;
@@ -114,7 +120,16 @@ blockquote {
   }
   #logo {
     width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
   }
   
 }
 
+@media screen and (max-width: 500px) {
+
+#logo {
+  display: none;
+}
+
+}
